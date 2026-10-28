@@ -1,31 +1,54 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trust-Me</title>
+
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            background-color: rgb(72, 72, 63);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 25px;
             text-align: center;
             font-family: Arial, sans-serif;
-            padding-top: 100px;
+            color: white;
+            background: linear-gradient(135deg, #171717, #48463f, #202020);
         }
 
         h1 {
-            font-size: 45px;
+            font-size: clamp(35px, 7vw, 55px);
+            margin-bottom: 25px;
+            color: #ffffff;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
         }
 
         p {
-            font-size: 20px;
-            margin: 25px;
+            max-width: 650px;
+            margin-bottom: 35px;
+            font-size: clamp(17px, 3vw, 22px);
+            line-height: 1.8;
+            color: #e0ded9;
         }
 
         button {
-            background-color: red;
+            background: linear-gradient(135deg, #ff3333, #b80000);
             border: none;
-            padding: 15px 30px;
-            border-radius: 10px;
+            border-radius: 12px;
+            padding: 16px 35px;
             cursor: pointer;
+            box-shadow: 0 8px 25px rgba(255, 0, 0, 0.25);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         button a {
@@ -36,8 +59,12 @@
         }
 
         button:hover {
-            background-color: darkred;
-            transform: scale(1.1);
+            transform: scale(1.08);
+            box-shadow: 0 10px 35px rgba(255, 0, 0, 0.45);
+        }
+
+        button:active {
+            transform: scale(0.96);
         }
     </style>
 </head>
@@ -46,14 +73,12 @@
     <h1>Trust Meeee 🫠🫠</h1>
 
     <p>
-        Enna nambuu itha click pannu, Enna nee nambalam sathiyamaaaaa click pannu poo.
+        Enna nambuu itha click pannu, Enna nee nambalam
+        sathiyamaaaaa click pannu poo.
     </p>
 
     <button>
-        <a href="video.html"
-           target="_blank">
-            CLICK MEEE
-        </a>
+        <a href="video.html" target="_blank">CLICK MEEE</a>
     </button>
 </body>
 </html>
